@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#title{
+    position: absolute;
+    margin-top: 20px;
+    font-size: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.color{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    margin-right: 10px;
+    float: left;
+    bottom: 20px;
+    display: block;
+}
+
+#black{
+    left: 40%;
+    background-color: black;                
+}
+
+#red{
+    left: 45%;
+    background-color: red;
+}
+
+#blue{
+    left: 50%;
+    background-color: blue;
+}
+
+#green{
+    left: 55%;
+    background-color: green;
+}
+
+.clear{
+    clear:both;
+}
