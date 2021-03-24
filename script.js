@@ -9,6 +9,9 @@ let red = document.getElementById('red');
 let blue = document.getElementById('blue');
 let green = document.getElementById('green');
 
+//Ambil Slider
+let slider = document.getElementById('lineSize');
+
 canvas.width = window.innerWidth-10;
 canvas.height = window.innerHeight-10; 
 
@@ -34,7 +37,7 @@ canvas.addEventListener('mouseup', function(){
 //pas mouse digerakkan cek apakah sedang ditekan atau tidak
 canvas.addEventListener('mousemove', function(e){
     if(paint){
-        ctx.lineWidth = 8;
+        ctx.lineWidth = slider.value;
         ctx.lineCap = 'round';
         ctx.lineTo(e.clientX, e.clientY);
         ctx.stroke();
